@@ -114,6 +114,179 @@ const Projects = () => {
                       </ul>
                     </p>
                     </div>
+              </Col>
+              </Row>
+              <Row className="p-2">
+                    
+                    <Col xs lg="4">
+                    <Row className="justify-content-center mb-2 p-2">
+                    
+                        <Image
+                        className="Jaguar justify-content-end"
+                        alt="Jaguar"
+                        style={{
+                            height: 250,
+                            width: 250
+                        }}                    
+                        src='Jaguar.jpg'
+                        roundedCircle
+                        thumbnail
+                        fluid
+                        />
+                    </Row>
+              </Col>
+              <Col>
+                    <div  style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">
+                    <p>
+                    <b>Project#: Jaguar Portal(Jul, 2015 - Dec, 2017 )<br/></b>
+                    <b>Jaguar:</b>Jaguar is the sports car and luxury vehicle brand of Jaguar Land Rover, a British multinational car manufacturer with its headquarters in Whitley, Coventry, England.
+                      <br/><b>Environment:</b> Java, Manual Testing, Cucumber BDD, Selenium Testing, Maven, TestNG
+                      <br/><b>Roles & Responsibilities:</b>
+                      <ul>
+                        <li>Involved in the Selenium WebDriver scripts by using Java.</li>
+                        <li>Preparing Test cases, reviewing the Test cases and executing those Test cases.</li>
+                        <li>Created and executed Staging, Master, Production build jobs in Bamboo Server.</li>
+                        <li>Creating defects while doing verification on application and following developers until they closure.</li>
+                        <li>Executing Test Cases and Generating Test Summary Reports.</li>
+                        <li>Attending weekly meeting with development team to discuss the issues/concerns and any updates of the modules.</li>
+                        <li>Checked the Build log file to identifying the bugs and posting in JIRA.</li>
+                        <li>Executed test cases and the tested local machine, Sauce Labs, Selenium Headless Grid.</li>
+                      </ul>
+                    </p>
+                    </div>
+                   </Col> 
+                </Row>
+                <Row className="p-2">
+                    
+                    <Col xs lg="4">
+                    <Row className="justify-content-center mb-2 p-2">
+                    
+                         <Image
+                        className="Landrover justify-content-end"
+                        alt="Landrover"
+                        style={{
+                            height: 250,
+                            width: 250
+                        }}                    
+                        src='Land-Rover.png'
+                        roundedCircle
+                        thumbnail
+                        fluid
+                        />
+                    </Row>
+              </Col>
+              <Col>
+                    <div  style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">
+                    <p>
+                    <b>Project#: Landrover Portal(Jul, 2015 - Dec, 2017 )<br/></b>
+                    <b>Landrover:</b>Land Rover is a British brand of predominantly four-wheel drive, off-road capable vehicles, owned by multinational car manufacturer Jaguar Land Rover, since 2008 a subsidiary of India's Tata Motors. JLR builds Land Rovers in Brazil, China, India, Slovakia, and the United Kingdom
+                      <br/><b>Environment:</b> Java, Manual Testing, Cucumber BDD, Selenium Testing, Maven, TestNG
+                      <br/><b>Roles & Responsibilities:</b>
+                      <ul>
+                        <li>Involved in the Selenium WebDriver scripts by using Java.</li>
+                        <li>Preparing Test cases, reviewing the Test cases and executing those Test cases.</li>
+                        <li>Created and executed Staging, Master, Production build jobs in Bamboo Server.</li>
+                        <li>Creating defects while doing verification on application and following developers until they closure.</li>
+                        <li>Executing Test Cases and Generating Test Summary Reports.</li>
+                        <li>Attending weekly meeting with development team to discuss the issues/concerns and any updates of the modules.</li>
+                        <li>Checked the Build log file to identifying the bugs and posting in JIRA.</li>
+                        <li>Executed test cases and the tested local machine, Sauce Labs, Selenium Headless Grid.</li>
+                      </ul>
+                    </p>
+                    </div>
+                   </Col> 
+                </Row>
+              <Row className="p-2">
+                    
+                    <Col xs lg="4">
+                        <Row className="justify-content-center mb-2 p-2">
+                        
+                            <Image
+                            className="A_la_Calc justify-content-end"
+                            alt="A_la_Calc"
+                            style={{
+                                height: 250,
+                                width: 250
+                            }}                    
+                            src='A_la_Calc.png'
+                            roundedCircle
+                            thumbnail
+                            fluid
+                            />
+                        </Row>
+                  </Col>
+                  <Col>
+                        <div  style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">
+                        <p>
+                        <b>Project#: A la Calc portal(Jun, 2014 - Jun, 2015 Project )<br/></b>
+                        <b>A la Calc:</b>
+                        Use a la Calc to Easily Create Nutrition Panels That Assure Compliance with US, UK & EU. Use a la Calc to Easily Calculate Costs, Nutrition, Allergens & Labels for Your Recipes. Toggle Panels: US/UK/EU. Identify Allergens. Calculate Nutri-Score. Nutrition Panel Software<br/>
+                        <br/><b>Environment:</b> Ruby On Rails, Restful API, React JS, Bootstrap, MySQL, AWS, Bamboo, JIRA
+                          <br/><b>Roles & Responsibilities:</b>
+                          <ul>
+                            <li>Creating new components with Ruby On Rails in back-end & front-end with React JS</li>
+                            <li>Writing test cases, Creating EC2 Instance from AWS for Selenium Grid</li>
+                            <li>Implemented selenium grid for cross browser testing with Sauce Labs</li>
+                            <li>Involved for designing, development and production environments with CEO and BA in Agile process</li>
+                          </ul>
+                        </p>
+                        </div>
+                       </Col> 
+                    </Row>
+                    <Row className="p-2">
+                    
+                    <Col xs lg="4">
+                    <Row className="justify-content-center mb-2 p-2">
+                    
+                        <Image
+                        className="PDS justify-content-end"
+                        alt="PDS"
+                        style={{
+                            height: 250,
+                            width: 250
+                        }}                    
+                        src='Premiere_Digital_Services.jpg'
+                        roundedCircle
+                        thumbnail
+                        fluid
+                        />
+                    </Row>
+              </Col>
+              <Col>
+                    <div  style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">
+                    <p>
+                    <b>Project#: PDS Portal(Jun, 2014 - Jun, 2015 Project )<br/></b>
+                    <b>PDS:</b>
+
+                    <p>
+                    Premiere Digital Services is one of the largest independent digital media post-
+                    production houses in the world. We offer multi-platform, multi-media digital content
+                    processing, storage and distribution for studios and independent content owners. Premiere
+                    also provides aggregation to digital platforms giving independent content owners a path
+                    to digital distribution.
+                    </p>
+                    <p>
+                    PDS has works with several hundred content providers and distribution
+                    platforms/broadcasters around the world. Premiere is capable of meeting your needs.
+                    PDS performs a wide array of services to prepare content for distribution to all meadia
+                    types from digital platforms (e.g. iTunes, GooglePlay, Hulu, Netflix ) to traditional
+                    broadcast.
+                    </p>
+                      <b>Environment:</b> Java, Selenium WebDriver, Grid and TestNG, Bamboo, JIRA, Confluence
+                      <br/><b>Roles & Responsibilities:</b>
+                      <ul>
+                        <li>Writing test cases, Creating EC2 Instance from AWS for Selenium Grid</li>
+                        <li>Implemented selenium grid for cross browser testing with Sauce Labs</li>
+                        <li>Involved in the Selenium WebDriver scripts by using Java.</li>
+                        <li>Created and executed Staging, Master, Production build jobs in Bamboo Server.</li>
+                        <li>Developed the Data Driven Framework based on the Project Requirements.</li>
+                        <li>Analyzed the requirements provided by the client.</li>
+                        <li>Restoring the Data Base in Remote Server and checking Data Base tables, columns etc.</li>
+                        <li>Executed test cases and the tested local machine, Sauce Labs, Selenium Headless Grid.</li>
+                        <li>Checked the Build log file to identifying the bugs and posting in JIRA.</li>
+                      </ul>
+                    </p>
+                    </div>
                    </Col> 
                 </Row>
             </Container>

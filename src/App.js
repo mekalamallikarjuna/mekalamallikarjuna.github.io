@@ -15,6 +15,9 @@ import Resume from './pages/Resume';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import TelemedMD from './pages/TelemedMD';
+import A_la_Calc from './pages/A_la_Calc';
+import Jaguar from './pages/Jaguar';
+import PDS from './pages/PDS';
 import NavBar from './Navbar';
 import Footer from './Footer';
 
@@ -60,6 +63,8 @@ import MongoDB from './programmings/mongodb/MongoDB';
 import Aiml from './programmings/aiml/Aiml';
 import { getBlobFromDataTransferItem } from '@testing-library/user-event/dist/cjs/utils/index.js';
 import Vacation from './pages/Vacation';
+import Landrover from './pages/Landrover';
+
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -122,6 +127,10 @@ const App = () => {
           <Route path='/projects' element={<Projects/>}/>
           <Route path='/telemedmd' element={<TelemedMD/>} />
           <Route path='/vacation' element={<Vacation/>} />
+          <Route path='/A_la_Calc' element={<A_la_Calc/>}/>
+          <Route path='/pds' element={<PDS/>}/>
+          <Route path='/jaguar' element={<Jaguar/>}/>
+          <Route path='/landrover' element={<Landrover/>}/>
           {isAuthenticated ?
             <>
               <Route path="/logout" element={<Logout setIsAuthenticated={setIsAuthenticated} />} />

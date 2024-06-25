@@ -27,7 +27,6 @@ const Vacation = () => {
                         width: 250
                       }}                    
                     src='vacation.png'
-                    thumbnail
                     roundedCircle
                     fluid
                     />

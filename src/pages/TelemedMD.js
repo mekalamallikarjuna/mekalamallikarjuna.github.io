@@ -27,7 +27,6 @@ const TelemedMD = () => {
                         width: 250
                       }}                    
                     src='telemedmd.jpg'
-                    thumbnail
                     roundedCircle
                     fluid
                     />
