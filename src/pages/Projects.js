@@ -37,7 +37,7 @@ const Projects = () => {
               <Col>
                     <div  style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">
                     <p>
-                    <b>Project#1: TelemedMD (Feb 2020 - Present )<br/></b>
+                    <b>Project#: TelemedMD (Feb 2020 - Present )<br/></b>
                       Telemed MD is a nationwide virtual platform providing medical care through virtual  clinics an online Telehealth support. Every Patients can connect with doctors via online. Patients can have video sessions with doctors and can use their insurance to cover the expenses of doctor visit and diagnosis fee. The diagnosis report will be sent to the patient both by Images and as PDF.
                       <br/><b>Environment:</b> Ruby, Ruby On Rails, Sidekiq, Whenever, React
                       Js, JavaScript, Bootstrap, HTML & CSS, Carrierwave, PDFKit,
@@ -65,6 +65,7 @@ const Projects = () => {
                     </div>
                    </Col> 
                 </Row>
+                <hr/>
                 <Row className="p-2">
                     
                     <Col xs lg="4">
@@ -88,7 +89,7 @@ const Projects = () => {
               <Col>
                     <div  style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">
                     <p>
-                    <b>Project#2: Vacation (Feb 2019 to Feb 2020)<br/></b>
+                    <b>Project#: Vacation (Feb 2019 to Feb 2020)<br/></b>
                     Vacation is a premier travel planning service that combines the
                     valuable services of travel specialists with inspirational content
                     to help you customize a travel experience that truly exceeds
@@ -116,6 +117,123 @@ const Projects = () => {
                     </div>
               </Col>
               </Row>
+              <hr/>
+              <Row className="p-2">
+                    
+                    <Col xs lg="4">
+                    <Row className="justify-content-center mb-2 p-2">
+                    
+                        <Image
+                        className="mysingers justify-content-end"
+                        alt="MySingers"
+                        style={{
+                            height: 250,
+                            width: 250
+                        }}                    
+                        src='MySingers.png'
+                        roundedCircle
+                        thumbnail
+                        fluid
+                        />
+                    </Row>
+              </Col>
+              <Col>
+                  <div  style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">
+                    <p>
+                    <b>Project#: MySinger Portal(Jan, 2017 - Jan, 2019)<br/></b>
+                    <b>MySinger:</b>This is the web application for singers. In this website have a admin and co-cordinator. A
+event created by the admin and he is assigned to co-ordinator. A Signers have participates
+in the events who created by the admin. A user and Singer have likes the song in online.
+Based on the event ending date needs to announce the winner automatically. Each event
+have a Co-ordinator for monitoring a event from event starting date to event ending date.
+Finally Singer get the prize from the online.
+                      <br/><b>Environment:</b> Java, Servlets, JSP, JDBC,HTML,CSS,Bootstrap, Javascript,JQuery,Tomcat Server,Windows,Linux
+                      <br/><b>Roles & Responsibilities:</b>
+                      <ul>
+                        <li>Created the documents and code for every module</li>
+                        <li>Preparing database with MySQL and UseCase, EER Diagrams</li>
+                        <li>Implemented data base relationships with Java code logics</li>
+                        <li>fixed the database errors and server code errors.</li>
+                      </ul>
+                    </p>
+                    </div>
+                   </Col> 
+                </Row>
+                <hr/>
+                <Row className="p-2">
+                    
+                    <Col xs lg="4">
+                    <Row className="justify-content-center mb-2 p-2">
+                    
+                        <Image
+                        className="BabyFashion justify-content-end"
+                        alt="BabyFashion"
+                        style={{
+                            height: 250,
+                            width: 250
+                        }}                    
+                        src='BabyFashion.gif'
+                        roundedCircle
+                        thumbnail
+                        fluid
+                        />
+                    </Row>
+              </Col>
+              <Col>
+                  <div  style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">
+                    <p>
+                    <b>Project#: BabyFashion Portal(Jan, 2017 - Jan, 2019)<br/></b>
+                    <b>BabyFashion:</b>The baby fashion is the e-commerce website (B2C). In this website provides the good price with good quality items for only baby. In the fashion world, every person needs latest items day to day. So we are focusing on the trend of child hood age wearing dress.
+                      <br/><b>Environment:</b> PHP, MySQL, HTML, CSS, Bootstrap, Javascript, JQuery
+                      <br/><b>Roles & Responsibilities:</b>
+                      <ul>
+                        <li>Created the documents and code for every module</li>
+                        <li>Preparing database with MySQL and EER Diagrams</li>
+                        <li>Implemented data base relationships with PHP code logics</li>
+                        <li>Fixed the database errors and server code errors.</li>
+                      </ul>
+                    </p>
+                    </div>
+                   </Col> 
+                </Row>
+                <hr/>
+                <Row className="p-2">
+                    
+                    <Col xs lg="4">
+                    <Row className="justify-content-center mb-2 p-2">
+                    
+                        <Image
+                        className="MyClassifieds justify-content-end"
+                        alt="MyClassifieds"
+                        style={{
+                            height: 250,
+                            width: 250
+                        }}                    
+                        src='MyClassifieds.png'
+                        roundedCircle
+                        thumbnail
+                        fluid
+                        />
+                    </Row>
+              </Col>
+              <Col>
+                  <div  style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">
+                    <p>
+                    <b>Project#: MyClassifieds Portal(Jan, 2017 - Jan, 2019)<br/></b>
+                    <b>MyClassifieds:</b>This website(C2C) for online ads.Find the latest classified ads for flats, jobs, cars, motorbikes, furniture, tools, personals and more for sale in India. Find buyers and sellers that suit.
+                      <br/><b>Environment:</b> PHP, MySQL, HTML, CSS, Bootstrap, Javascript, JQuery
+                      <br/><b>Roles & Responsibilities:</b>
+                      <ul>
+                        <li>Created the documents and code for every module</li>
+                        <li>Preparing database with MySQL and EER Diagrams</li>
+                        <li>Implemented data base relationships with PHP code logics</li>
+                        <li>Fixed the database errors and server code errors.</li>
+                      </ul>
+                    </p>
+                    </div>
+                   </Col> 
+                </Row>
+                <hr/>
               <Row className="p-2">
                     
                     <Col xs lg="4">
@@ -156,6 +274,7 @@ const Projects = () => {
                     </div>
                    </Col> 
                 </Row>
+                <hr/>
                 <Row className="p-2">
                     
                     <Col xs lg="4">
@@ -196,6 +315,7 @@ const Projects = () => {
                     </div>
                    </Col> 
                 </Row>
+                <hr/>
               <Row className="p-2">
                     
                     <Col xs lg="4">
@@ -218,7 +338,7 @@ const Projects = () => {
                   <Col>
                         <div  style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">
                         <p>
-                        <b>Project#: A la Calc portal(Jun, 2014 - Jun, 2015 Project )<br/></b>
+                        <b>Project#: A la Calc portal(Jun, 2014 - Jun, 2015 )<br/></b>
                         <b>A la Calc:</b>
                         Use a la Calc to Easily Create Nutrition Panels That Assure Compliance with US, UK & EU. Use a la Calc to Easily Calculate Costs, Nutrition, Allergens & Labels for Your Recipes. Toggle Panels: US/UK/EU. Identify Allergens. Calculate Nutri-Score. Nutrition Panel Software<br/>
                         <br/><b>Environment:</b> Ruby On Rails, Restful API, React JS, Bootstrap, MySQL, AWS, Bamboo, JIRA
@@ -233,6 +353,7 @@ const Projects = () => {
                         </div>
                        </Col> 
                     </Row>
+                    <hr/>
                     <Row className="p-2">
                     
                     <Col xs lg="4">
@@ -255,7 +376,7 @@ const Projects = () => {
               <Col>
                     <div  style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">
                     <p>
-                    <b>Project#: PDS Portal(Jun, 2014 - Jun, 2015 Project )<br/></b>
+                    <b>Project#: PDS Portal(Jun, 2014 - Jun, 2015 )<br/></b>
                     <b>PDS:</b>
 
                     <p>
