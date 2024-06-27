@@ -21,9 +21,10 @@ const Ruby = () => {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header><b>Ruby Latest Version</b></Accordion.Header>
+        <Accordion.Header><b>Ruby Version</b></Accordion.Header>
         <Accordion.Body>
-            Ruby 3.3.3
+            <p>ruby -v</p>
+            <p>ruby --version</p>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
@@ -46,7 +47,14 @@ const Ruby = () => {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="4">
-        <Accordion.Header><b>Ruby Variables</b>: 1. Local Variable, 2. Class Variable, 3. Instance Variable, 4. Global Variable</Accordion.Header>
+        <Accordion.Header><b>Ruby Variables</b>: 
+          <ol>
+            <li>Local Variable(SNAME)</li>
+            <li>Class Variable(@@sname</li>
+            <li>Instance Variable(@sname)</li>
+            <li>Global Variable($sname)</li>
+          </ol>
+        </Accordion.Header>
         <Accordion.Body>
           <a target='_blank' href="">1. Local Variable</a><br/>
           <a target='_blank' href="https://onlinegdb.com/omIQPQcslT">2. Class Variable</a><br/>
@@ -55,7 +63,16 @@ const Ruby = () => {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="5">
-        <Accordion.Header><b>Ruby Data Types: </b> 1. Numbers, 2. Strings, 3. Symbols, 4. Hashes, 5. Arrays, 6. Booleans</Accordion.Header>
+        <Accordion.Header><b>Ruby Data Types: </b>
+          <ol>
+            <li>Numbers</li>
+            <li>Strings</li>
+            <li>Symbols</li>
+            <li>Hashes</li>
+            <li>Arrays</li>
+            <li>Booleans</li>
+          </ol>
+        </Accordion.Header>
         <Accordion.Body>
           <a target='_blank' href="https://onlinegdb.com/XfAJxAaou">String Example-1</a><br/>
           <a target='_blank' href="https://onlinegdb.com/wV9r-8Yrk">String Example-2</a><br/>
