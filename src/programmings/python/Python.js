@@ -134,7 +134,7 @@ const Python = () => {
           <Accordion.Item eventKey="19">
             <Accordion.Header><b>14. Exception Handling</b></Accordion.Header>
             <Accordion.Body>
-              <a target='_blank' href="https://allurianilkumar.github.io/python/16.%20Exception%20Handling.html"></a>Exception Handling<br/>
+              <a target='_blank' href="https://allurianilkumar.github.io/python/16.%20Exception%20Handling.html">Exception Handling</a><br/>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="20">
