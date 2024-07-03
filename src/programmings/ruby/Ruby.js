@@ -861,6 +861,852 @@ end
           </div>
         </Accordion.Body>
       </Accordion.Item>
+
+      <Accordion.Item eventKey="13">
+        <Accordion.Header><b>14. Date and Time</b>:The Time class represents dates and times in Ruby. It is a thin layer over the system date and time functionality provided by the operating system.</Accordion.Header>
+        <Accordion.Body>
+          <div>
+          
+          <h3>Getting the Current Date and Time</h3>
+          <p>To get the current date and time:</p>
+          <pre>
+            {`
+require 'date'
+
+# Current date and time
+current_time = Time.now
+puts current_time
+
+# Current date
+current_date = Date.today
+puts current_date
+
+            `}
+          </pre>
+         <h3>Creating Specific Date and Time Instances</h3>
+         <p>You can create a specific date or time instance:</p>
+         <pre>
+          {`
+require 'date'
+
+# Create a specific date
+specific_date = Date.new(2024, 7, 3)
+puts specific_date
+
+# Create a specific time
+specific_time = Time.new(2024, 7, 3, 14, 30, 0)
+puts specific_time
+
+          `}
+         </pre>
+         <h3>Formatting Date and Time</h3>
+         <p>You can format dates and times using the strftime method:</p>
+         <pre>
+          {`
+require 'date'
+
+# Formatting current date
+formatted_date = Date.today.strftime("%d/%m/%Y")
+puts formatted_date
+
+# Formatting current time
+formatted_time = Time.now.strftime("%H:%M:%S on %B %d, %Y")
+puts formatted_time
+
+          `}
+         </pre>
+
+         <h3>Parsing Date and Time Strings</h3>
+         <p>You can parse strings into date and time objects:</p>
+         <pre>
+          {`
+require 'date'
+
+# Parsing a date string
+date_str = "2024-07-03"
+parsed_date = Date.parse(date_str)
+puts parsed_date
+
+# Parsing a time string
+time_str = "2024-07-03 14:30:00"
+parsed_time = Time.parse(time_str)
+puts parsed_time
+
+          `}
+          </pre>
+
+         <h3>Date and Time Arithmetic</h3>
+         <p>You can perform arithmetic operations on date and time objects:</p>
+         <pre>
+          {`
+require 'date'
+
+# Adding days to a date
+date = Date.today
+new_date = date + 10
+puts new_date
+
+# Adding seconds to a time
+time = Time.now
+new_time = time + (60 * 60 * 24) # Adding one day
+puts new_time
+
+          `}
+         </pre>
+
+
+         <h3>Comparing Dates and Times</h3>
+         <p>You can compare date and time objects:</p>
+         <pre>
+          {`
+require 'date'
+
+# Comparing dates
+date1 = Date.new(2024, 7, 3)
+date2 = Date.new(2024, 7, 10)
+puts date1 < date2  # true
+
+# Comparing times
+time1 = Time.new(2024, 7, 3, 14, 30, 0)
+time2 = Time.new(2024, 7, 3, 15, 30, 0)
+puts time1 < time2  # true
+
+          `}
+         </pre>
+
+
+
+         <h3>Various components of both Date and Time objects:</h3>
+         <p></p>
+         <pre>
+          {`
+require 'date'
+
+# Create a date object
+date = Date.new(2024, 7, 3)
+# Get components of the date
+year = date.year
+month = date.month
+day = date.day
+wday = date.wday
+yday = date.yday
+leap = date.leap?
+
+puts "Date Components:"
+puts "Year: #{year}, Month: #{month}, Day: #{day}"
+puts "Weekday: #{wday} (0=Sunday, 6=Saturday)"
+puts "Day of the Year: #{yday}"
+puts "Leap Year: #{leap}"
+
+# Create a time object
+time = Time.new(2024, 7, 3, 14, 30, 0)
+# Get components of the time
+year = time.year
+month = time.month
+day = time.day
+hour = time.hour
+minute = time.min
+second = time.sec
+wday = time.wday
+yday = time.yday
+zone = time.zone
+dst = time.dst?
+
+puts "\nTime Components:"
+puts "Year: #{year}, Month: #{month}, Day: #{day}"
+puts "Hour: #{hour}, Minute: #{minute}, Second: #{second}"
+puts "Weekday: #{wday} (0=Sunday, 6=Saturday)"
+puts "Day of the Year: #{yday}"
+puts "Time Zone: #{zone}"
+puts "Daylight Saving Time: #{dst}"
+
+          `}
+         </pre>
+          </div>
+        </Accordion.Body>
+      </Accordion.Item>
+
+      <Accordion.Item eventKey="14">
+        <Accordion.Header><b>15. File I/O</b>:Ruby provides a whole set of I/O-related methods implemented in the Kernel module. All the I/O methods are derived from the class IO</Accordion.Header>
+        <Accordion.Body>
+          <div>
+          <p>The class IO provides all the basic methods, such as read, write, gets, puts, readline, getc, and printf.
+
+This chapter will cover all the basic I/O functions available in Ruby. For more functions, please refer to Ruby Class IO.</p>
+          <h3>The puts Statement</h3>
+          <p>In the previous chapters, you have assigned values to variables and then printed the output using puts statement.
+
+The puts statement instructs the program to display the value stored in the variable. This will add a new line at the end of each line it writes.:</p>
+          <pre>
+            {`
+#!/usr/bin/ruby
+
+val1 = "This is variable one"
+val2 = "This is variable two"
+puts val1
+puts val2
+
+            `}
+          </pre>
+         <h3>The gets Statement</h3>
+         <p>The gets statement can be used to take any input from the user from standard screen called STDIN.:</p>
+         <pre>
+          {`
+#!/usr/bin/ruby
+
+puts "Enter a value :"
+val = gets
+puts val
+
+          `}
+         </pre>
+         <h3>The putc Statement</h3>
+         <p>Unlike the puts statement, which outputs the entire string onto the screen, the putc statement can be used to output one character at a time.:</p>
+         <pre>
+          {`
+#!/usr/bin/ruby
+
+str = "Hello Ruby!"
+putc str
+          `}
+         </pre>
+
+         <h3>The print Statement</h3>
+         <p></p>
+         <pre>
+          {`
+#!/usr/bin/ruby
+
+print "Hello World"
+print "Good Morning"
+
+          `}
+          </pre>
+
+         <h3>Opening and Closing Files</h3>
+         <p>Syntax:</p>
+         <pre>
+          {`
+
+aFile = File.new("filename", "mode")
+   # ... process the file
+aFile.close
+
+          `}
+         </pre>
+         <h3>The File.open Method:</h3>
+         <p></p>
+         <pre>
+          {`
+File.open("filename", "mode") do |aFile|
+   # ... process the file
+end
+
+          `}
+         </pre>
+
+          <h2>Reading and Writing Files</h2>
+         <h3>The sysread Method:</h3>
+         <pre>
+          {`
+#!/usr/bin/ruby
+
+aFile = File.new("input.txt", "r")
+if aFile
+   content = aFile.sysread(20)
+   puts content
+else
+   puts "Unable to open file!"
+end
+
+          `}
+         </pre>
+
+         <h3>The syswrite Method:</h3>
+         <pre>
+          {`
+#!/usr/bin/ruby
+
+aFile = File.new("input.txt", "r+")
+if aFile
+   aFile.syswrite("ABCDEF")
+else
+   puts "Unable to open file!"
+end
+
+          `}
+         </pre>
+
+         <h3>The each_byte Method:</h3>
+         <pre>
+          {`
+#!/usr/bin/ruby
+
+aFile = File.new("input.txt", "r+")
+if aFile
+   aFile.syswrite("ABCDEF")
+   aFile.each_byte {|ch| putc ch; putc ?. }
+else
+   puts "Unable to open file!"
+end
+
+          `}
+         </pre>
+         <h3>The IO.readlines Method:</h3>
+         <pre>
+          {`
+#!/usr/bin/ruby
+
+arr = IO.readlines("input.txt")
+puts arr[0]
+puts arr[1]
+
+          `}
+         </pre>
+         <h3>The IO.foreach Method:</h3>
+         <pre>
+          {`
+#!/usr/bin/ruby
+
+IO.foreach("input.txt"){|block| puts block}
+
+          `}
+         </pre>
+
+         <h3>Renaming and Deleting Files</h3>
+   <pre>
+          {`
+         #!/usr/bin/ruby
+
+# Rename a file from test1.txt to test2.txt
+File.rename( "test1.txt", "test2.txt" )
+
+#!/usr/bin/ruby
+
+# Delete file test2.txt
+File.delete("test2.txt")
+`}
+</pre>
+<h3>File Modes and Ownership</h3>
+<pre>
+  {`
+  #!/usr/bin/ruby
+
+file = File.new( "test.txt", "w" )
+file.chmod( 0755 )
+  `}
+
+</pre>
+<h3>File Inquiries</h3>
+<pre>
+  {`
+# Example-1
+
+File.open("file.rb") if File::exists?( "file.rb" )
+
+# Example-2
+
+# This returns either true or false
+File.file?( "text.txt" )
+
+
+# Example-3
+
+# a directory
+File::directory?( "/usr/local/bin" ) # => true
+
+# a file
+File::directory?( "file.rb" ) # => false
+
+# Example-4
+
+File.readable?( "test.txt" )   # => true
+File.writable?( "test.txt" )   # => true
+File.executable?( "test.txt" ) # => false
+
+# Example-5
+File.zero?( "test.txt" )      # => true
+File.size?( "text.txt" )     # => 1002
+File::ftype( "test.txt" )     # => file
+
+# Example-6
+
+File::ctime( "test.txt" ) # => Fri May 09 10:06:37 -0700 2008
+File::mtime( "text.txt" ) # => Fri May 09 10:44:44 -0700 2008
+File::atime( "text.txt" ) # => Fri May 09 10:45:01 -0700 2008
+
+`}
+</pre>
+<h2>Directories in Ruby</h2>
+<h3>Navigating Through Directories</h3>
+<pre>
+  {`
+Ex-1
+  Dir.chdir("/usr/bin")
+Ex-2
+  puts Dir.pwd # This will return something like /usr/bin
+Ex-3
+  puts Dir.entries("/usr/bin").join(' ')
+Ex-4
+  Dir.foreach("/usr/bin") do |entry|
+    puts entry
+  end
+Ex-5
+  Dir["/usr/bin/*"]
+
+  `}
+
+</pre>
+<h3>Creating a Directory</h3>
+<pre>
+  {`
+  Dir.mkdir("mynewdir")
+
+  Dir.mkdir( "mynewdir", 755 )
+  `}
+</pre>
+
+<h3>Deleting a Directory</h3>
+<pre>
+  {`
+  Dir.delete("testdir")
+  `}
+</pre>
+
+<h3>Creating Files & Temporary Directories</h3>
+<pre>{`
+require 'tmpdir'
+   tempfilename = File.join(Dir.tmpdir, "tingtong")
+   tempfile = File.new(tempfilename, "w")
+   tempfile.puts "This is a temporary file"
+   tempfile.close
+   File.delete(tempfilename)
+`}</pre>
+<pre>{`
+require 'tempfile'
+   f = Tempfile.new('tingtong')
+   f.puts "Hello"
+   puts f.path
+   f.close
+`}</pre>
+</div>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="15">
+        <Accordion.Header><b>16. Multithreading</b>:Thread is a unit of concurrency that allows you to execute code in parallel</Accordion.Header>
+        <Accordion.Body>
+          <div>
+          <h3>Basic Usage</h3>
+          <pre>
+            {`
+thread = Thread.new do
+  10.times do |i|
+    puts "Thread #{i}"
+    sleep(1)
+  end
+end
+
+10.times do |i|
+  puts "Main #{i}"
+  sleep(1)
+end
+
+thread.join # Wait for the thread to finish
+
+            `}
+          </pre>
+          <pre>
+            {`
+#!/usr/bin/ruby
+
+def func1
+   i = 0
+   while i<=2
+      puts "func1 at: #{Time.now}"
+      sleep(2)
+      i = i+1
+   end
+end
+
+def func2
+   j = 0
+   while j<=2
+      puts "func2 at: #{Time.now}"
+      sleep(1)
+      j = j+1
+   end
+end
+
+puts "Started At #{Time.now}"
+t1 = Thread.new{func1()}
+t2 = Thread.new{func2()}
+t1.join
+t2.join
+puts "End at #{Time.now}"
+`}
+          </pre>
+<h3>Thread Methods</h3>
+<ul>
+  <li><strong>{`Thread.new`}</strong>: Creates a new thread.</li>
+  <li><strong>{`Thread#join`}</strong>: Waits for the thread to finish execution.</li>
+  <li><strong>{`Thread#kill`}</strong>: Terminates the thread.</li>
+  <li><strong>{`Thread#value`}</strong>: Returns the value of the thread's block after it has finished executing.</li>
+  <li><strong>{`Thread.current`}</strong>: Returns the currently executing thread.</li>
+  <li><strong>{`Thread.main`}</strong>: Returns the main thread.</li>
+</ul>
+
+<h2>Ruby Thread States Example</h2>
+<p>In Ruby, a thread can be in one of several states during its lifecycle. Understanding these states helps in managing thread behavior effectively. Here are the main thread states in Ruby:</p>
+
+<h2>1. New</h2>
+<p>When a thread is created but not yet started, it is in the <strong>new</strong> state. This state lasts very briefly as the thread is typically started immediately after creation.</p>
+<pre>{`thread = Thread.new do
+# thread code here
+end`}</pre>
+
+<h2>2. Runnable</h2>
+<p>Once a thread is started, it enters the <strong>runnable</strong> state. In this state, the thread is ready to run and is waiting for the CPU to allocate time for it. In MRI Ruby, due to the Global Interpreter Lock (GIL), only one thread can execute at a time, even though multiple threads may be in the runnable state.</p>
+
+<h2>3. Running</h2>
+<p>When the CPU allocates time to a thread, it enters the <strong>running</strong> state. In this state, the thread's code is actively being executed. In MRI Ruby, only one thread can be in the running state at any given time.</p>
+
+<h2>4. Sleeping</h2>
+<p>If a thread is waiting for a certain condition to be met (e.g., waiting for I/O, sleeping for a certain duration), it enters the <strong>sleeping</strong> state. The thread will not consume CPU time in this state and will resume execution once the condition is met.</p>
+<pre>{`Thread.new do
+sleep(10)
+end`}</pre>
+
+<h2>5. Dead</h2>
+<p>Once a thread has completed its execution, it enters the <strong>dead</strong> state. In this state, the thread cannot be restarted or reused.</p>
+<pre>{`thread = Thread.new do
+# thread code here
+end
+thread.join
+puts "Thread is dead" if thread.stop?`}</pre>
+
+<h2>6. Aborting</h2>
+<p>When a thread is explicitly terminated using the {`Thread#kill`} method, it enters the <strong>aborting</strong> state before transitioning to the dead state.</p>
+<pre>
+  {`thread = Thread.new do
+loop do
+puts "Thread is running"
+sleep(1)
+end
+end
+
+sleep(3)
+thread.kill
+puts "Thread has been killed"
+`}
+</pre>
+<h2>Thread Synchronization in Ruby</h2>
+    <p>In multi-threaded programming, synchronization is crucial to ensure that threads do not interfere with each other when accessing shared resources. Ruby provides several mechanisms to achieve synchronization:</p>
+
+    <h2>1. Mutex</h2>
+    <p>A {`Mutex`} (short for mutual exclusion) is a synchronization primitive that allows only one thread to access a resource at a time.</p>
+    <pre>{`require 'thread'
+
+mutex = Mutex.new
+counter = 0
+
+threads = 10.times.map do
+  Thread.new do
+    1000.times do
+      mutex.synchronize do
+        counter += 1
+      end
+    end
+  end
+end
+
+threads.each(&:join)
+puts "Counter: #{counter}"`}</pre>
+    <p>In this example, the {`mutex.synchronize`} block ensures that only one thread can increment the counter at a time, preventing race conditions.</p>
+
+    <h2>2. Monitor</h2>
+    <p>A {`Monitor`} is similar to a {`Mutex`} but provides additional convenience methods for condition variables. It can be included in a class to synchronize its methods.</p>
+    <pre>{`require 'monitor'
+
+class SharedResource
+  include MonitorMixin
+
+  def initialize
+    super()  # Initialize the monitor
+    @resource = 0
+  end
+
+  def access
+    synchronize do
+      @resource += 1
+      puts "Resource value: #{@resource}"
+    end
+  end
+end
+
+shared = SharedResource.new
+
+threads = 10.times.map do
+  Thread.new do
+    100.times { shared.access }
+  end
+end
+
+threads.each(&:join)`}</pre>
+    <p>The {`MonitorMixin`} module is included in the class, providing synchronized access to the {`access`} method.</p>
+
+    <h2>3. Queue</h2>
+    <p>A {`Queue`} is a thread-safe data structure that can be used to communicate between threads.</p>
+    <pre>{`require 'thread'
+
+queue = Queue.new
+
+producer = Thread.new do
+  10.times do |i|
+    queue << i
+    puts "Produced #{i}"
+    sleep(1)
+  end
+end
+
+consumer = Thread.new do
+  10.times do
+    item = queue.pop
+    puts "Consumed #{item}"
+  end
+end
+
+producer.join
+consumer.join`}</pre>
+    <p>In this example, the producer thread adds items to the queue, and the consumer thread removes and processes them. The {`Queue`} ensures that the operations are thread-safe.</p>
+
+    <h2>4. ConditionVariable</h2>
+    <p>A {`ConditionVariable`} is used to signal between threads that a certain condition has been met. It is typically used with a {`Mutex`}.</p>
+    <pre>{`require 'thread'
+
+mutex = Mutex.new
+condition = ConditionVariable.new
+ready = false
+
+producer = Thread.new do
+  sleep(2)
+  mutex.synchronize do
+    ready = true
+    condition.signal
+    puts "Producer signaled"
+  end
+end
+
+consumer = Thread.new do
+  mutex.synchronize do
+    until ready
+      condition.wait(mutex)
+    end
+    puts "Consumer received signal"
+  end
+end
+
+producer.join
+consumer.join`}</pre>
+    <p>In this example, the consumer thread waits for the condition to be signaled by the producer thread, ensuring proper synchronization.</p>
+          </div>
+        </Accordion.Body>
+      </Accordion.Item>
+
+
+      <Accordion.Item eventKey="16">
+        <Accordion.Header><b>17.Regular Expressions: </b>Regular expressions (regex) are a powerful tool for pattern matching and string manipulation. In Ruby, regular expressions are created using the Regexp class.</Accordion.Header>
+        <Accordion.Body>
+          <div>
+          <h1>Regular Expressions in Ruby</h1>
+    <p>Regular expressions (regex) are a powerful tool for pattern matching and string manipulation. In Ruby, regular expressions are created using the Regexp class. Here are some common uses and syntax for regex in Ruby:</p>
+
+    <h2>1. Creating a Regular Expression</h2>
+    <p>Regular expressions are typically created using slashes ({`/`}):</p>
+    <pre>{`/pattern/`}</pre>
+    <p>You can also use the {`Regexp.new`} method:</p>
+    <pre>{`Regexp.new('pattern')`}</pre>
+
+    <h2>2. Matching a Pattern</h2>
+    <p>To check if a string matches a pattern, use the {`=~`} operator or the {`match`} method:</p>
+    <pre>{`if /pattern/ =~ 'string'
+  puts 'Match found'
+end
+
+match_data = /pattern/.match('string')
+if match_data
+  puts 'Match found'
+end`}</pre>
+
+    <h2>3. Common Regex Patterns</h2>
+    <p>Here are some common regex patterns and their meanings:</p>
+    <ul>
+        <li>{`.`} - Any single character except newline</li>
+        <li>{`\d`} - Any digit</li>
+        <li>{`\w`} - Any word character (alphanumeric + underscore)</li>
+        <li>{`\s`} - Any whitespace character</li>
+        <li>{`[abc]`} - Any character in the set (a, b, or c)</li>
+        <li>{`[^abc]`} - Any character not in the set (not a, b, or c)</li>
+        <li>{`a|b`} - Either a or b</li>
+        <li>{`a*`} - Zero or more occurrences of a</li>
+        <li>{`a+`} - One or more occurrences of a</li>
+        <li>{`a?`} - Zero or one occurrence of a</li>
+        <li>{`a{3}`} - Exactly three occurrences of a</li>
+        <li>{`a{3,}`} - Three or more occurrences of a</li>
+        <li>{`a{3,5}`} - Between three and five occurrences of a</li>
+    </ul>
+
+    <h2>4. Capturing Groups</h2>
+    <p>Parentheses are used to create capturing groups:</p>
+    <pre>{`if /(a)(b)(c)/ =~ 'abc'
+  puts $1  # 'a'
+  puts $2  # 'b'
+  puts $3  # 'c'
+end`}</pre>
+
+    <h2>5. String Substitution</h2>
+    <p>You can use the {`sub`} and {`gsub`} methods for string substitution:</p>
+    <pre>{`str = 'hello world'
+str.sub(/world/, 'Ruby')  # 'hello Ruby'
+str.gsub(/l/, 'L')        # 'heLLo worLd'`}</pre>
+
+    <h2>6. Regex Options</h2>
+    <p>Regular expressions can be modified with options:</p>
+    <ul>
+        <li>{`i`} - Ignore case</li>
+        <li>{`m`} - Multiline mode</li>
+        <li>{`x`} - Extended mode (ignore whitespace and comments)</li>
+    </ul>
+    <pre>{`/pattern/i    # Case-insensitive
+/pattern/m    # Multiline mode
+/pattern/x    # Extended mode`}</pre>
+
+    <h2>7. Example: Email Validation</h2>
+    <p>Here's an example of a regex for validating an email address:</p>
+    <pre>{`email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
+if email_regex =~ 'example@example.com'
+  puts 'Valid email'
+else
+  puts 'Invalid email'
+end`}</pre>
+
+    <h2>8. Using Regex with Enumerables</h2>
+    <p>You can use regex with enumerable methods like {`grep`} to filter collections:</p>
+    <pre>{`words = %w[cat bat rat hat mat]
+matching_words = words.grep(/at/)
+puts matching_words  # ['cat', 'bat', 'rat', 'hat', 'mat']`}</pre>
+          </div>
+      </Accordion.Body>
+      </Accordion.Item>
+
+
+      <Accordion.Item eventKey="17">
+        <Accordion.Header><b>18. Emails: </b> Sending email attachments in Ruby can be achieved using the 'mail' gem and 'net/smtp'</Accordion.Header>
+        <Accordion.Body>
+          <div>
+          <h1>Sending Email with Attachments in Ruby</h1>
+
+    <p>This example demonstrates how to send an email with attachments using Ruby and the mail gem.</p>
+    <b>1. Install the {`'mail'`} gem (if not already installed):</b>
+<p>gem install mail</p>
+    <h2>Ruby Script</h2>
+    <pre>{`
+require 'mail'
+
+# Set up SMTP settings
+options = { 
+  address:              'smtp.yourserver.com',
+  port:                 587,
+  user_name:            'your_username',
+  password:             'your_password',
+  authentication:       'plain',
+  enable_starttls_auto: true 
+}
+
+# Create a new Mail object
+mail = Mail.new do
+  from     'sender@example.com'
+  to       'recipient@example.com'
+  subject  'Email with Attachments'
+
+  html_part do
+    content_type 'text/html; charset=UTF-8'
+    body "&lt;h1&gt;Hello from Ruby!&lt;/h1&gt;&lt;p&gt;This email contains attachments.&lt;/p&gt;"
+  end
+
+  # Attachments
+  add_file '/path/to/file1.pdf'
+  add_file '/path/to/file2.jpg'
+end
+
+# Deliver the email
+mail.delivery_method(:smtp, options)
+mail.deliver
+    `}</pre>
+
+    <h2>Explanation</h2>
+    <ul>
+        <li><strong>SMTP Configuration:</strong> Replace {`'smtp.yourserver.com'`}, {`'your_username'`}, {`'your_password'`}, and other SMTP settings with your actual SMTP server details.</li>
+        <li><strong>Mail Object:</strong> Use {`Mail.new`} to create a new email. Specify the {`from`}, {`to`}, and {`subject`} fields.</li>
+        <li><strong>HTML Content:</strong> Use {`html_part`} to specify the HTML content of the email. Ensure to set the {`content_type`} appropriately ({`text/html; charset=UTF-8`}).</li>
+        <li><strong>Attachments:</strong> Use {`add_file`} to attach files to the email. Provide the full path to each file you want to attach.</li>
+        <li><strong>Delivery:</strong> Configure the delivery method using SMTP ({`mail.delivery_method(:smtp, options)`}) and then call {`mail.deliver`} to send the email.</li>
+    </ul>
+
+    <p>Adjust the SMTP settings, email addresses, and file paths according to your specific use case.</p>
+          
+
+   <h1>Sending Email using {`net/smtp`} in Ruby</h1>
+    <p>This example demonstrates how to send an email using {`net/smtp`} in Ruby without using additional gems.</p>
+
+    <h2>Ruby Script</h2>
+    <pre>{`
+require 'net/smtp'
+
+# SMTP server settings
+smtp_server = 'smtp.yourserver.com'
+smtp_port = 587
+smtp_domain = 'yourdomain.com'
+smtp_username = 'your_username'
+smtp_password = 'your_password'
+
+# Email details
+from_address = 'sender@example.com'
+to_address = 'recipient@example.com'
+subject = 'Email using net/smtp'
+body = "Hello,<br><br>This is a test email sent using net/smtp in Ruby."
+
+# Construct the email message
+message = "From: #{from_address}\r\n"
+message += "To: #{to_address}\r\n"
+message += "Subject: #{subject}\r\n"
+message += "Content-Type: text/html\r\n"
+message += "\r\n"
+message += "#{body}"
+
+# Send email using SMTP
+Net::SMTP.start(smtp_server, smtp_port, smtp_domain, smtp_username, smtp_password, :login) do |smtp|
+  smtp.send_message(message, from_address, to_address)
+end
+
+puts "Email sent successfully!"
+`}
+</pre>
+
+    <h2>Explanation</h2>
+    <ul>
+        <li><strong>SMTP Server Settings:</strong> Replace {`smtp_server`}, {`smtp_port`}, {`smtp_domain`}, {`smtp_username`}, and {`smtp_password`} with your SMTP server details.</li>
+        <li><strong>Email Details:</strong> Set {`from_address`}, {`to_address`}, {`subject`}, and {`body`} according to your email content. Use {`Content-Type: text/html`} for HTML emails.</li>
+        <li><strong>Construct Message:</strong> Format the email message using HTML for the body. Ensure proper formatting with HTML tags for structure and styling.</li>
+        <li><strong>Send Email:</strong> Use {`Net::SMTP.start`} to connect to the SMTP server and send the email using {`smtp.send_message`}.</li>
+    </ul>
+
+
+          
+          </div>
+
+        </Accordion.Body>
+        </Accordion.Item>
     </Accordion>
     </>);
 }
