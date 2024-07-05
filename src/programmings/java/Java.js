@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 
 import PdfViewerComponent from '../../components/PdfViewerComponent';
 import useDocumentTitle from '../../hooks/useDocumentTitle';
+import JavaConcepts from './JavaConcepts';
 
 const Java = () => {
     const [document_title, setDocumentTitle] = useDocumentTitle("ROR:Java");
@@ -15,6 +16,9 @@ const Java = () => {
     <>
     <Container>
                 <h3> JAVA:</h3>
+                <div style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">    
+                <p><strong>Definition:</strong> Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is intended to let application developers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.</p>
+                </div>
                 <Row>
                     <Col>
                         <div className="">
@@ -39,6 +43,12 @@ const Java = () => {
 			        </div>
                 </Row>
             </Container>
+            <JavaConcepts/>
+            <>
+        
+        
+        
+    </>
     </>);
 }
 
