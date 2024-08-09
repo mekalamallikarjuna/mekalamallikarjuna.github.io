@@ -28,10 +28,7 @@ const Python = () => {
         <h4>Reference Books:</h4>
         <ol>
           <li>
-            <a
-              target="_blank"
-              href="/python/Introduction to Python Programming.pdf"
-            >
+            <a target="_blank" href="Introduction to Python Programming.pdf">
               Gowrishankar S, Veena A., Introduction to Python Programming, CRC
               Press.
             </a>
@@ -45,7 +42,7 @@ const Python = () => {
           <li>
             <a
               target="_blank"
-              href="/python/Introduction to Programming Using Python by Y. Daniel Liang.pdf"
+              href="Introduction to Programming Using Python by Y. Daniel Liang.pdf"
             >
               Introduction to Programming Using Python, Y. Daniel Liang,
               Pearson.
@@ -56,27 +53,27 @@ const Python = () => {
         <h4>Chapters References:</h4>
         <ol>
           <li>
-            <a target="_blank" href="/python/Chapter-1.pdf">
+            <a target="_blank" href="Chapter-1.pdf">
               Chapter-1: Introduction to Programming
             </a>
           </li>
           <li>
-            <a target="_blank" href="/python/Chapter-2.pdf">
+            <a target="_blank" href="Chapter-2.pdf">
               Chapter-2: Problem-Solving and Algorithms
             </a>
           </li>
           <li>
-            <a target="_blank" href="/python/Chapter-3.pdf">
+            <a target="_blank" href="Chapter-3.pdf">
               Chapter-3: Introduction to Python
             </a>
           </li>
           <li>
-            <a target="_blank" href="/python/Chapter-4.pdf">
+            <a target="_blank" href="Chapter-4.pdf">
               Chapter-4: DECISION STRUCTURES
             </a>
           </li>
           <li>
-            <a target="_blank" href="/python/Chapter-5.pdf">
+            <a target="_blank" href="Chapter-5.pdf">
               Chapter-5: LOOPING STATEMENTS
             </a>
           </li>
