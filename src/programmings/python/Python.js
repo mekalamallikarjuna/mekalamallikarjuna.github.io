@@ -2,11 +2,26 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import useDocumentTitle from "../../hooks/useDocumentTitle";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+
 const Python = () => {
   const [document_title, setDocumentTitle] = useDocumentTitle("ROR:Python");
   return (
     <>
       <h3>Python:</h3>
+      <Row>
+        <Col>
+          <div className="">
+            <Button title="Click to download now" variant="warning">
+              <a className="button" href="PYTHON.pdf" download="PYTHON.pdf">
+                Download <i className="fa fa-download" />
+              </a>
+            </Button>
+          </div>
+        </Col>
+      </Row>
       <div
         style={{
           background: "#a8a8a8ba",
