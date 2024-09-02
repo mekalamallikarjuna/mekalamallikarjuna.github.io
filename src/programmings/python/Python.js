@@ -15,8 +15,21 @@ const Python = () => {
         <Col>
           <div className="">
             <Button title="Click to download now" variant="warning">
+              <a
+                className="button"
+                href="PYTHON.pdf"
+                download="Python_Programming_Syllabus.pdf"
+              >
+                Python Programming Syllabus <i className="fa fa-download" />
+              </a>
+            </Button>
+          </div>
+        </Col>
+        <Col>
+          <div className="">
+            <Button title="Click to download now" variant="warning">
               <a className="button" href="PYTHON.pdf" download="PYTHON.pdf">
-                Download <i className="fa fa-download" />
+                Python Book Download <i className="fa fa-download" />
               </a>
             </Button>
           </div>
@@ -90,6 +103,91 @@ const Python = () => {
           <li>
             <a target="_blank" href="Chapter-5.pdf">
               Chapter-5: LOOPING STATEMENTS
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-6.pdf">
+              Chapter-6: Introduction to Function
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-7.pdf">
+              Chapter-7: LISTS
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-8.pdf">
+              Chapter-8: TUPLES
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-9.pdf">
+              Chapter-9: sets AND dictionary
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-10.pdf">
+              Chapter-10: String
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-11.pdf">
+              Chapter-11: Advanced Functions
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-12.pdf">
+              Chapter-12: -------
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-13.pdf">
+              Chapter-13: Inheritance
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-14.pdf">
+              Chapter-14: Advanced Class
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-15.pdf">
+              Chapter-15: Modules in Python
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-16.pdf">
+              Chapter-16: ERRORS AND EXCEPTIONS
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-17.pdf">
+              Chapter-17: Debugging and Testing
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-18.pdf">
+              Chapter-18: FILE HANDLING
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-19.pdf">
+              Chapter-19: Introduction to Graphical User Interface
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-20.pdf">
+              Chapter-20: Introduction to data analytics with Python
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-21.pdf">
+              Chapter-21: Database and Parallel Programming
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="Chapter-22.pdf">
+              Chapter-22: Networks and Security
             </a>
           </li>
         </ol>
