@@ -34,6 +34,24 @@ const CProgramming = () => {
             </Button>
           </div>
         </Col>
+        <Col>
+          <div className="">
+            <Button title="Click to download Syllabus" variant="warning">
+              <a className="button" href="C_Lab.docx" download="C_Lab.docx">
+                C Lab <i className="fa fa-download" />
+              </a>
+            </Button>
+          </div>
+        </Col>
+        <Col>
+          <div className="">
+            <Button title="Click to downlod UNIT-I" variant="warning">
+              <a className="button" href="C_Unit_I.pdf" download="C_Unit_I.pdf">
+                C UNIT-I Note Book <i className="fa fa-download" />
+              </a>
+            </Button>
+          </div>
+        </Col>
       </Row>
       <CProgrammingConcepts />
     </>

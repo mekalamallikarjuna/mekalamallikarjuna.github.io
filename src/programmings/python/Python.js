@@ -28,6 +28,20 @@ const Python = () => {
         <Col>
           <div className="">
             <Button title="Click to download now" variant="warning">
+              <a
+                className="button"
+                href="Python_Lab_3.pdf"
+                download="Python_Lab_3.pdf"
+              >
+                Python Lab
+                <i className="fa fa-download" />
+              </a>
+            </Button>
+          </div>
+        </Col>
+        <Col>
+          <div className="">
+            <Button title="Click to download now" variant="warning">
               <a className="button" href="PYTHON.pdf" download="PYTHON.pdf">
                 Python Book Download <i className="fa fa-download" />
               </a>
