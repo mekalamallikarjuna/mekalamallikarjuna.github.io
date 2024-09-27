@@ -17,7 +17,7 @@ const Python = () => {
             <Button title="Click to download now" variant="warning">
               <a
                 className="button"
-                href="PYTHON.pdf"
+                href="Python_Programming_Syllabus.pdf"
                 download="Python_Programming_Syllabus.pdf"
               >
                 Python Programming Syllabus <i className="fa fa-download" />
@@ -269,12 +269,22 @@ const Python = () => {
             <b>Python Collections</b>
           </Accordion.Header>
           <Accordion.Body>
-            <a
-              target="_blank"
-              href="https://allurianilkumar.github.io/python/A4)%20Python%20Collections.html"
-            >
-              Python Collections
-            </a>
+            <ol>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://allurianilkumar.github.io/python/A4)%20Python%20Collections.html"
+                >
+                  Python Collections
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://onlinegdb.com/O3I1pgcEP">
+                  String, List, Tuple, Set, frozenset, zip(), Dictionary, del
+                  statement Examples
+                </a>
+              </li>
+            </ol>
             <br />
           </Accordion.Body>
         </Accordion.Item>
@@ -450,7 +460,11 @@ const Python = () => {
             >
               13. Python Classes - Objects
             </a>
+
             <br />
+            <a target="_blank" href="https://onlinegdb.com/bE54852BA">
+              Files & Opps Examples
+            </a>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="17">
@@ -553,9 +567,13 @@ const Python = () => {
               target="_blank"
               href="https://allurianilkumar.github.io/python/numpy.html"
             >
-              Numpy
+              Numpy Examples
             </a>
             <br />
+            <a target="_blank" href="https://onlinegdb.com/SLosP_YlN">
+              Introduction to Data Science: Functional Programming, JSON and XML
+              in Python, NumPy with Python, Pandas.
+            </a>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="24">
