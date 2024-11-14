@@ -151,7 +151,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="copyright text-center">
-                    Copyright &copy; {currentYear} <span>Alluri Anil Kumar</span>
+                    Copyright &copy; {currentYear} <span>Mekala Mallikarjuna</span>
                 </div>
             </footer>
         </>

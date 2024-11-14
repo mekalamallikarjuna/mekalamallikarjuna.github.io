@@ -78,11 +78,10 @@ const App = () => {
       <div className="container mt-0">
         <marquee style={marqueeStyle}>
           {" "}
-          Hello, My website in progress. I am Anil, Full Stack Ruby On Rails
-          Developer having total 6+ years of experience on IT industry & having
-          3+ years of Non-IT experience with various domains and technologies.
-          Reach me via E-Mail: kumarallurianil@gmail.com, Mobile: +91
-          9848094663.
+          Hello, My website in progress. I am Mallikarjuna,Full Stack Java Developer Fresher, having good experience on IT industry 
+          & having domains and technologies.
+          Reach me via E-Mail: mekalamallikarjuna46@gmail.com, 
+          Mobile: +91 9391267018.
         </marquee>
         <NavBar isAuthenticated={isAuthenticated} />
         <Routes>

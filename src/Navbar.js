@@ -32,7 +32,7 @@ function NavBar({ isAuthenticated }) {
         <Navbar bg="dark" data-bs-theme="dark" sticky="top" key={expand} expand={expand} className="bg-body-tertiary text-center">
           <Container fluid>
             <Navbar.Brand>
-              <Nav.Link as={NavLink} to="/">Alluri Anil kumar</Nav.Link>
+              <Nav.Link as={NavLink} to="/">Mekala Mallikarjuna</Nav.Link>
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls={`offcanvasNavbar-expand-${expand}`}

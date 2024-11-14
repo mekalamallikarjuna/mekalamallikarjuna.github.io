@@ -12,13 +12,15 @@ const Home = () => {
         <div style={{background: '#a8a8a8ba',textAlign: 'justify', textJustify: 'inter-word'}} className="p-2">
         
         <p>
-        I'm a Full Stack Ruby On Rails Developer, Freelancer, Software Trainer. I have total 6+ years
-         of experience on IT industry & 3+ years of Non-IT experience with Ruby On Rails with React JS technologies in various domains.
-         I have been working in software industry for the past 5+ years. I worked 2 years as a 
-         Software Trainer. I worked 1+ years as a Freelancer. Before I worked 1 years as a Ruby on Rails 
-         Developer. I have solid fundamentals of programming languages, front-end, back-end, testing and deployment environments.
-         I am looking forward to a new challenge role with my experience and passion.
+                    Hello, my name is Mekala Mallikarjuna, and I hold a B.Tech degree in Computer Science and Engineering with a specialization in Artificial Intelligence. I am passionate about technology and have developed a strong foundation in both front-end and back-end development.
+
+In terms of technical skills, I am proficient in front-end technologies like HTML, CSS, and JavaScript, which I use to create interactive and user-friendly websites. On the back-end, I have experience working with programming languages such as C and Java, and I am well-versed in database management using SQL.
+
+I am eager to continue learning and applying my skills in real-world projects, and I am always looking for opportunities to grow and contribute to innovative solutions in the tech industry.
+
+Feel free to reach out to me at 6304716656 if you would like to discuss potential collaborations or opportunities.
         </p>
+                    
         </div>
     </>
     );

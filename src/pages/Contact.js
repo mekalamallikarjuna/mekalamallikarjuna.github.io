@@ -50,7 +50,7 @@ const Contact = () => {
                       </div>
                       <div className="text m-2">
                         <h5>
-                          +91 9848094663
+                          +91 9391267018
                         </h5>
                       </div>
                     </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                       </div>
                       <div className="text m-2">
                         <h5>
-                          kumarallurianil@gmail.com
+                          mekalamallikarjuna46@gmail.com
                         </h5>
                       </div>
                     </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                       </div>
                       <div className="text m-2">
                         <h5>
-                           https://allurianilkumar.github.io
+                        https://mekalamallikarjuna.github.io
                         </h5>
                       </div>
                     </div>
