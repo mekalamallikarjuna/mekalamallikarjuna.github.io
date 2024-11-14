@@ -1,8 +1,8 @@
 {
-  "name": "aalluri",
+  "name": "mmallikarjuna",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://allurianilkumar.github.io",
+  "homepage": "https://mekalamallikarjuna.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -12,6 +12,7 @@
     "bootstrap": "^5.3.3",
     "font-awesome": "^4.7.0",
     "font-awesome-animation": "^1.1.1",
+    "mmallikarjuna": "file:",
     "pspdfkit": "2024.2.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
